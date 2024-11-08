@@ -5,6 +5,6 @@ class test{
         int t = n/2000;
         int f = n%2000/500;
         int tw = n%2000%500/200;
-        int oneh = ;
+        int oneh  ;
     }
 }
