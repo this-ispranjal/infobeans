@@ -8,8 +8,8 @@ class test{
         */
 
 
-        System.out.print("Entre a range of no. ---> ");
-        int  n = sc.nextInt();
+        // System.out.print("Entre a range of no. ---> ");
+        // int  n = sc.nextInt();
 
 
 
@@ -239,19 +239,56 @@ class test{
 
 
 
+        // ------------------------------------------------------------------------
 
 
         /* Q5. Take a number input from the user and print its square, cube, and square root using a while loop. */
 
-        int sqr = n*n ;
-        int cube = n*n*n;
+        // int sqr = n*n ;
+        // int cube = n*n*n;
 
-        System.out.println("The sqr of " + n + "--> "+ sqr);
-        System.out.println("The cube of " + n + "--> "+ cube);
-
-
+        // System.out.println("The sqr of " + n + "--> "+ sqr);
+        // System.out.println("The cube of " + n + "--> "+ cube);
 
 
+        // ------------------------------------------------------------------------
 
+
+        // Switch-Case Practice Questions:
+        /*Q3.   Write a program that takes a month number (1 to 12) and prints the corresponding month name (e.g., 1 = January, 2 = February, etc.) using switch-case. */
+        // System.out.println(" year no.");
+        // int year = sc.nextInt();
+
+        // int leapYear = 0 ;
+        
+
+        // switch (n) {
+        //     case 1:
+        //         System.out.println("jan");
+        //         break;
+        //     case leapYear==0?System.out.print("leap"):System.out.println("not leap");
+
+        //         break;
+        //     default:
+        //         throw new AssertionError();
+        // }
+
+
+
+
+
+
+
+        // for (int i = 0; i < 127; i++) {
+        //     System.out.println(i + " "+ (char)(i));
+        // }
+
+
+
+        for(char i = 'a'; i <='z';i++){
+            // for(char b = 1; b <= 4;b++){
+                System.out.println(i);
+            // }
+        }
     }
 }
