@@ -18,13 +18,13 @@ class test{
         // }
 
 
-        // 3. 
-        // for(int i = 1 ;i<=5;i++){
-        //         for(char a ='A'; a<='E';a++){
-        //             System.out.print(a);
-        //         }
-        //         System.out.println();
-        //  }
+        3. 
+        for(int i = 1 ;i<=5;i++){
+                for(char a ='A'; a<='E';a++){
+                    System.out.print(a);
+                }
+                System.out.println();
+         }
 
         // 4. 
         // not getting
