@@ -43,6 +43,16 @@ class test {
             else 
                 System.out.print(++var2);
 
+
+        // Q. 5  Now i know about the Bitwase operators
+
+          int x = 3;
+             int y = ~ x;
+             int z;
+             z = x > y ? x : y;
+             System.out.print(z);
+        // Output ---> 3
+
         
     }    
 }
