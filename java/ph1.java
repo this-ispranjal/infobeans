@@ -78,12 +78,12 @@ class test{
 
         /* Q4. Find the sum of numbers from 1 to 100 that are multiples of 3 using a for loop.  */
 
-        // int sum = 1;
-        // for(int i = 1 ;i<=n;i++){
-        //    if(i%3==0){
-        //     sum+=i;
-        //    }
-        // }
+        int sum = 1;
+        for(int i = 1 ;i<=n;i++){
+           if(i%3==0){
+            sum+=i;
+           }
+        }
 
         // System.out.println(sum);
 

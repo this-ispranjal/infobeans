@@ -4,13 +4,13 @@ import java.util.concurrent.ForkJoinPool;
 class test{
     public static void main(String args[]){
 
-        // 1.
-        // for(int i = 1; i<=3;i++){
-        //     for(int j = 1 ;j<=5;j++){
-        //         System.out.print(j+4);
-        //     }
-        //     System.out.println();
-        // }
+        1.
+        for(int i = 1; i<=3;i++){
+            for(int j = 1 ;j<=5;j++){
+                System.out.print(j+4);
+            }
+            System.out.println();
+        }
 
         //2. 
         // for(int i = 1; i<=3;i++){
@@ -21,13 +21,13 @@ class test{
         // }
 
 
-        // 3. 
-        // for(int i = 1 ;i<=5;i++){
-        //         for(char a ='A'; a<='E';a++){
-        //             System.out.print(a);
-        //         }
-        //         System.out.println();
-        //  }
+        3. 
+        for(int i = 1 ;i<=5;i++){
+                for(char a ='A'; a<='E';a++){
+                    System.out.print(a);
+                }
+                System.out.println();
+         }
 
         // 4. 
         // not getting
@@ -45,12 +45,12 @@ class test{
 
         // 6. 
 
-        // for(int i = 1; i<=5;i++){
-        //     for(int j = 1 ;j<=i;j++){
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
-        // }
+        for(int i = 1; i<=5;i++){
+            for(int j = 1 ;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 
         // 7. 
         // for(char i = 'A'; i<='E';i++){
