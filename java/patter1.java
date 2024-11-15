@@ -1,3 +1,6 @@
+
+import java.util.concurrent.ForkJoinPool;
+
 class test{
     public static void main(String args[]){
 
@@ -111,17 +114,77 @@ class test{
     //     }
 
 
-    for(int i = 1; i<=5;i++){
-        for(int j = 5 ;j>=1;j--){
-           if(j>=(4-i+1) && j<=4){
-            System.out.print("*");
-        }
-           else{
-            System.out.print(" ");
+    // for(int i = 1; i<=5;i++){
+    //     for(int j = 5 ;j>=1;j--){
+    //        if(j>=(4-i+1) && j<=4){
+    //         System.out.print("*");
+    //     }
+    //        else{
+    //         System.out.print(" ");
 
-           }
+    //        }
+    //     }
+    //     System.out.println();
+    // }
+
+    // pardim
+    //  int k = 4;
+    // for (int i = 1 ; i<=4;i++){
+    //     for(int j = 1 ;j <=7 ;j++){
+    //         if(j>=(k-i+1) && j<=(k+i-1)){
+    //             System.out.print(j);
+    //         }else{
+    //             System.out.print(" ");
+    //         }
+    //     }
+    //     System.out.println();
+    // }
+
+        // reverse paradim
+
+        // for(int i = 1 ; i<=4 ;i++){
+        //     for (int j = 1 ;j<=7;j++){
+        //         if()
+        //     }
+        // }
+
+        // int row = 6;
+
+        // for (int i = 0; i < row; i++) {
+        //     for (int j = row-i; j >1; j--) {
+        //         System.out.print(" ");
+        //     }
+
+        //     for (int j = 0; j <= i; j++) {
+        //         System.out.println("* ");
+        //     }
+
+        //     System.out.println();
+        // }
+
+
+        int n = 5;
+        for(int i = 1 ;i<=n ;i++){
+            for(int j = 1 ; j<=n;j++){
+                if(j>=i && j<=n){
+                    System.out.print(j);
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
         }
-        System.out.println();
-    }
+        for(int i = 1 ;i<=n ;i++){
+            for(int j = 1 ; j<=n;j++){
+                if(j>=(n-i+1) && j<=n){
+                    System.out.print("j");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
     }
 } 

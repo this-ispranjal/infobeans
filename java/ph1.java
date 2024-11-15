@@ -8,8 +8,8 @@ class test{
         */
 
 
-        // System.out.print("Entre a range of no. ---> ");
-        // int  n = sc.nextInt();
+        System.out.print("Entre a range of no. ---> ");
+        int  n = sc.nextInt();
 
 
 
@@ -60,18 +60,18 @@ class test{
         // for knowing n to an
 
 
-        // for(int i = 1;i<=n;i++){
-        //     int c = 0;
+        for(int i = 1;i<=n;i++){
+            int c = 0;
 
-        //     for(int j = 1 ; j<=i; j++){
-        //         if(i%j==0){
-        //             c++;
-        //         }
-        //     }
-        //     if(c==2){
-        //         System.out.println(i );
-        //     }
-        // }
+            for(int j = 1 ; j<=i; j++){
+                if(i%j==0){
+                    c++;
+                }
+            }
+            if(c==2){
+                System.out.println(i );
+            }
+        }
         
         // ------------------------------------------------------------------------
         
@@ -285,10 +285,10 @@ class test{
 
 
 
-        for(char i = 'a'; i <='z';i++){
-            // for(char b = 1; b <= 4;b++){
-                System.out.println(i);
-            // }
-        }
+        // for(char i = 'a'; i <='z';i++){
+        //     // for(char b = 1; b <= 4;b++){
+        //         System.out.println(i);
+        //     // }
+        // }
     }
 }
