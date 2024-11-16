@@ -7,7 +7,7 @@ class test{
         System.out.print(" Entre a no. -----> : ");
         no = sc.nextInt();
         int t1 = no;
-
+// for loop way is also very easy 
         // for counting the length of the given words
         while(t1!=0){
             t1 = t1/10;
