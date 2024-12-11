@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ArmStrongs",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "WQ4",
+            "request": "launch",
+            "mainClass": "WQ4",
+            "projectName": "infobeans_465cacf0"
+        },
+        {
+            "type": "java",
+            "name": "nothing",
+            "request": "launch",
+            "mainClass": "nothing",
+            "projectName": "infobeans_465cacf0"
+        }
+    ]
+}

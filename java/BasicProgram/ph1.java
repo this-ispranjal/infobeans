@@ -60,30 +60,30 @@ class test{
         // for knowing n to an
 
 
-        for(int i = 1;i<=n;i++){
-            int c = 0;
+        // for(int i = 1;i<=n;i++){
+        //     int c = 0;
 
-            for(int j = 1 ; j<=i; j++){
-                if(i%j==0){
-                    c++;
-                }
-            }
-            if(c==2){
-                System.out.println(i );
-            }
-        }
+        //     for(int j = 1 ; j<=i; j++){
+        //         if(i%j==0){
+        //             c++;
+        //         }
+        //     }
+        //     if(c==2){
+        //         System.out.println(i );
+        //     }
+        // }
         
         // ------------------------------------------------------------------------
         
 
         /* Q4. Find the sum of numbers from 1 to 100 that are multiples of 3 using a for loop.  */
 
-        int sum = 1;
-        for(int i = 1 ;i<=n;i++){
-           if(i%3==0){
-            sum+=i;
-           }
-        }
+        // int sum = 1;
+        // for(int i = 1 ;i<=n;i++){
+        //    if(i%3==0){
+        //     sum+=i;
+        //    }
+        // }
 
         // System.out.println(sum);
 
@@ -290,5 +290,63 @@ class test{
         //         System.out.println(i);
         //     // }
         // }
+
+
+
+                // int a=10;
+                // switch(a)
+                // {
+                //     default: System.out.println("hello");
+                //     case 10: System.out.println("bye");
+                // } 
+
+
+
+
+             
+        // int month =2;
+
+        // String season;
+
+        // switch (month) {
+        //     case 12: case 1: case 2:
+        //         season = "Winter";
+        //         break;
+        //     case 3: case 4: case 5:
+        //         season = "Spring";
+        //         break;
+        //     case 6: case 7: case 8:
+        //         season = "Summer";
+        //         break;
+        //     case 9: case 10: case 11:
+        //         season = "Autumn";
+        //         break;
+        //     default:
+        //         season = "Invalid month";
+        //         break;
+        // }
+
+        // System.out.println("The season is: " + season);
+
+        // int n = 6;
+        double sum = 0 ,m;
+        int i;
+        for(i = 1; i<=n;i++){
+            double power = 1;
+            System.out.print("1/" + i+ "^" +i +" , ");
+
+                for(int j = 1;j<=i;j++){
+                    // counting the power
+                    power = power*i;
+                    
+                }
+            m = 1/power;
+            sum += m;
+        }
+        System.out.println();
+        System.out.println("sum = " + sum);
+    
+    
+
     }
 }

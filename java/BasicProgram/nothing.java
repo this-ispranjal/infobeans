@@ -3,7 +3,7 @@ class nothing {
 		byte a = 1;
 		byte b = 2;	
 		byte c =(byte) (a + b);
-	System.out.println(c);
+		System.out.println(c);
 	}
 
 

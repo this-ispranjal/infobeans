@@ -1,16 +1,15 @@
 
-import java.util.concurrent.ForkJoinPool;
 
 class test{
     public static void main(String args[]){
 
-        1.
-        for(int i = 1; i<=3;i++){
-            for(int j = 1 ;j<=5;j++){
-                System.out.print(j+4);
-            }
-            System.out.println();
-        }
+        // 1.
+        // for(int i = 1; i<=3;i++){
+        //     for(int j = 1 ;j<=5;j++){
+        //         System.out.print(j+4);
+        //     }
+        //     System.out.println();
+        // }
 
         //2. 
         // for(int i = 1; i<=3;i++){
@@ -21,13 +20,13 @@ class test{
         // }
 
 
-        3. 
-        for(int i = 1 ;i<=5;i++){
-                for(char a ='A'; a<='E';a++){
-                    System.out.print(a);
-                }
-                System.out.println();
-         }
+        // 3. 
+        // for(int i = 1 ;i<=5;i++){
+        //         for(char a ='A'; a<='E';a++){
+        //             System.out.print(a);
+        //         }
+        //         System.out.println();
+        //  }
 
         // 4. 
         // not getting
@@ -45,12 +44,12 @@ class test{
 
         // 6. 
 
-        for(int i = 1; i<=5;i++){
-            for(int j = 1 ;j<=i;j++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+        // for(int i = 1; i<=5;i++){
+        //     for(int j = 1 ;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
 
         // 7. 
         // for(char i = 'A'; i<='E';i++){
@@ -105,7 +104,7 @@ class test{
 
 
 
-    //    // 13. 
+    // 13. 
     //     for(int  i = 1; i<=5;i++){
     //         for(char j = 'A' ;j;j--){
     //             System.out.print(j);
@@ -163,28 +162,28 @@ class test{
         // }
 
 
-        int n = 5;
-        for(int i = 1 ;i<=n ;i++){
-            for(int j = 1 ; j<=n;j++){
-                if(j>=i && j<=n){
-                    System.out.print(j);
-                }
-                else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-        }
-        for(int i = 1 ;i<=n ;i++){
-            for(int j = 1 ; j<=n;j++){
-                if(j>=(n-i+1) && j<=n){
-                    System.out.print("j");
-                }
-                else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-        }
+        // int n = 5;
+        // for(int i = 1 ;i<=n ;i++){
+        //     for(int j = 1 ; j<=n;j++){
+        //         if(j>=i && j<=n){
+        //             System.out.print(j);
+        //         }
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i = 1 ;i<=n ;i++){
+        //     for(int j = 1 ; j<=n;j++){
+        //         if(j>=(n-i+1) && j<=n){
+        //             System.out.print("j");
+        //         }
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
     }
 } 
