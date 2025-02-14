@@ -11,7 +11,7 @@ class test{
 		int temp = i;
 		for( int t1 = i;t1>0;t1/=10){
 			length += 1;
-		}
+		} 
 		   int arm =0 , rem ;
 		
 		 for(int t2 = i ; t2>0;t2/=10){

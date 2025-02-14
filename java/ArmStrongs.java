@@ -10,11 +10,15 @@ class test{
 // for loop way is also very easy 
         // for counting the length of the given words
         while(t1!=0){
+
+
+
             t1 = t1/10;
             length = length + 1;
         }
 
-        // Now doing the sum 
+        // Now doing the sum
+
 
         int t2 = no; 
         int arm = 0, rem;

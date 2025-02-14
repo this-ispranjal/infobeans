@@ -1,40 +1,74 @@
-For Loop Practice Questions:
-Q1.  Print all numbers from 1 to 50 that are divisible by 4 using a for loop.
-Q2. Calculate and print the factorial of a number (given by the user) using a for loop.
-Q3. Print all prime numbers from 1 to 100 using a for loop.
- Q4. Find the sum of numbers from 1 to 100 that are multiples of 3 using a for loop.
- Q5. Print all odd numbers from 1 to a given number (input by user) using a for loop.
+import java.util.Scanner;
 
+class Employee {
+    Scanner sc = new Scanner(System.in);
+    int empNo = 1, daysPresent;
+    float perDayPay, monthlySalary;
+    String empName, department;
 
-Do-While Loop Practice Questions:
-Q1.  Take a number input from the user and keep halving it until it becomes less than or equal to 1, using a do-while loop.
-Q2. Reverse the digits of a given number (input by the user) using a do-while loop. (Example: 123 → 321)
-Q3. Print the Fibonacci series up to a given number using a do-while loop.
-Q.4   Calculate the sum of numbers from 1 to a given number (input by user) using a do-while loop.
-Q5.  Create a number-guessing game where the user has to guess a number between 1 and 10. The program will keep prompting the user to guess until they get it right, using a do-while loop.
+    // Onboarding a new employee
+    void onBoardEmp(String empName, String dept) {
+        this.empName = empName.trim();
+        this.department = dept.trim();
+        System.out.println("Congratulations! You are welcome onboard.");
+    }
 
-While Loop Practice Questions:
-Q1.  Print all numbers from 1 to 100 that are multiples of 5 using a while loop.
-Q2. Print the Fibonacci series up to a given number using a while loop.
-Q3. Calculate the factorial of a given number using a while loop.
-Q4. Find and print all Armstrong numbers between 1 and a given number (input by user) using a while loop.
-Q5. Take a number input from the user and print its square, cube, and square root using a while loop.
+    // Determine per day pay based on department
+    float process() {
+        if (department.equalsIgnoreCase("IT")) {
+            perDayPay = 200;
+        } else if (department.equalsIgnoreCase("Sales")) {
+            perDayPay = 100;
+        } else if (department.equalsIgnoreCase("BA")) {
+            perDayPay = 150;
+        } else if (department.equalsIgnoreCase("Business")) {
+            perDayPay = 90;
+        } else {
+            perDayPay = 0; // Invalid department
+        }
+        return perDayPay;
+    }
 
+    // Calculate monthly salary
+    float calculate() {
+        // Determine per day pay
+        process();
 
-Switch-Case Practice Questions:
- Q1. Write a program that takes an integer input from the user (1 to 7) and prints the corresponding day of the week (1 = Sunday, 2 = Monday, etc.). If the number is not between 1 and 7, print "Invalid Input".
- Q2.  Write a program that takes a character input from the user and checks if it's a vowel or a consonant using a switch-case statement.
- Q3.   Write a program that takes a month number (1 to 12) and prints the corresponding month name (e.g., 1 = January, 2 = February, etc.) using switch-case.
-  Q4.  Write a program that takes a grade input (A, B, C, D, F) from the user and prints the corresponding result (Pass/Fail) using switch-case.
- Q5.  Write a program that takes an integer input and checks if it's positive, negative, or zero using switch-case.
+        System.out.println("Enter the number of days you worked: ");
+        daysPresent = sc.nextInt();
 
+        // Calculate monthly salary
+        monthlySalary = perDayPay * daysPresent;
+        return monthlySalary;
+    }
 
+    // Display employee details
+    void display() {
+        System.out.println("\nEmployee No.: " + empNo);
+        System.out.println("Employee Name: " + empName);
+        System.out.println("Employee Department: " + department);
+        System.out.println("Per Day Pay: " + perDayPay);
+        System.out.println("Days Worked: " + daysPresent);
+        System.out.println("Employee Monthly Salary: " + monthlySalary);
+    }
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Employee employee = new Employee();
 
- // Advanded Questions
- 
-Q. Write a program that uses a for loop to print a multiplication table for any given number (1 to 10).
-Q.  Create a program using a do-while loop that keeps prompting the user to input their age and displays the category (Child, Teenager, Adult, Senior Citizen) based on the input age.
-Q. Write a program using a while loop that finds the sum of all odd numbers between 1 and 200.
-Q. Write a program using switch-case that converts a given number of seconds to hours, minutes, and seconds (e.g., 3600 seconds = 1 hour).
-Q. Write a program that asks for a user's age using a do-while loop. If the user is under 18, keep prompting them to enter a valid age. Once a valid age is entered, print a message that says whether the user is eligible to vote (age 18 or older).
+        // Onboard the employee
+        System.out.print("Enter Employee Name: ");
+        String name = sc.nextLine();
+        System.out.print("Enter Department: ");
+        String dept = sc.nextLine();
+        employee.onBoardEmp(name, dept);
+
+        // Process salary calculation and display details
+        employee.calculate();
+        employee.display();
+
+        // Close the Scanner
+        sc.close();
+        employee.sc.close();
+    }
+}
